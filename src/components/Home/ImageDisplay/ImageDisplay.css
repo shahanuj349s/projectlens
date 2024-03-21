@@ -1,0 +1,11 @@
+.image-container {
+  width: 100%;
+}
+
+.image-content {
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  width: 55%;
+  border-top-right-radius: 1rem;
+}
