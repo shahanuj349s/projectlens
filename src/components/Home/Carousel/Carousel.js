@@ -2,10 +2,11 @@ import React from "react";
 import Carousel_1 from "../../../Assets/Carousel_1.jpeg";
 import Carousel_2 from "../../../Assets/Carousel_2.jpg";
 import Carousel_3 from "../../../Assets/Carousel_3.jpeg";
+import "./Carousel.css";
 
 function Carousel() {
   return (
-    <div>
+    <div className="">
       <div
         id="carouselExampleCaptions"
         class="carousel slide"
@@ -34,8 +35,8 @@ function Carousel() {
           ></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src={Carousel_1} class="d-block w-100" alt="..." />
+          <div class="carousel-item active justify-content-center align-items-center">
+            <img src={Carousel_1} class="d-block image" alt="..." />
             <div class="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>
@@ -43,8 +44,8 @@ function Carousel() {
               </p>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src={Carousel_2} class="d-block w-100" alt="..." />
+          <div class="carousel-item justify-content-center align-items-center">
+            <img src={Carousel_2} class="d-block image" alt="..." />
             <div class="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>
@@ -52,8 +53,8 @@ function Carousel() {
               </p>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src={Carousel_3} class="d-block w-100" alt="..." />
+          <div class="carousel-item justify-content-center align-items-center">
+            <img src={Carousel_3} class="d-block image" alt="..." />
             <div class="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
               <p>

@@ -1,7 +1,16 @@
 .companyContainer {
-  padding: 2rem 3rem;
+  margin: 2rem 3rem;
+  padding: 3rem 0rem;
+  background-color: #0d3b66;
+  border-radius: 3rem;
+}
+
+.companyText {
+  color: #ffe55c;
+  /* color: #d2ab67; */
 }
 
 .description {
   padding: 1rem 15rem;
+  color: #ffffff;
 }

@@ -1,14 +1,18 @@
 import React from "react";
+import "./FAQs.css";
 
 function FAQs() {
   return (
-    <div>
-      <h1>FAQs</h1>
-      <div class="accordion px-5" id="accordionExample">
-        <div class="accordion-item mb-3 border border-secondary">
+    <div className="pb-5">
+      <h1 className="faq-title pt-4 pb-3">FAQs</h1>
+      <div
+        class="accordion px-5 accordion-box-border border-none"
+        id="accordionExample"
+      >
+        <div class="accordion-item accordion-box-border mb-3 border border-secondary">
           <h2 class="accordion-header">
             <button
-              class="accordion-button"
+              class="accordion-button shadow-none rounded-pill"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseOne"
@@ -33,10 +37,10 @@ function FAQs() {
             </div>
           </div>
         </div>
-        <div class="accordion-item mb-3 border border-secondary">
+        <div class="accordion-item accordion-box-border mb-3 border border-secondary">
           <h2 class="accordion-header">
             <button
-              class="accordion-button collapsed"
+              class="accordion-button collapsed shadow-none rounded-pill"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseTwo"
@@ -59,10 +63,10 @@ function FAQs() {
             </div>
           </div>
         </div>
-        <div class="accordion-item mb-3 border border-secondary">
+        <div class="accordion-item accordion-box-border mb-3 border border-secondary">
           <h2 class="accordion-header">
             <button
-              class="accordion-button collapsed"
+              class="accordion-button collapsed shadow-none rounded-pill"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseThree"
@@ -87,10 +91,10 @@ function FAQs() {
             </div>
           </div>
         </div>
-        <div class="accordion-item mb-3 border border-secondary">
+        <div class="accordion-item accordion-box-border mb-3 border border-secondary">
           <h2 class="accordion-header">
             <button
-              class="accordion-button collapsed"
+              class="accordion-button collapsed shadow-none rounded-pill"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseFour"
@@ -114,10 +118,10 @@ function FAQs() {
             </div>
           </div>
         </div>
-        <div class="accordion-item mb-3 border border-secondary">
+        <div class="accordion-item accordion-box-border mb-3 border border-secondary">
           <h2 class="accordion-header">
             <button
-              class="accordion-button collapsed"
+              class="accordion-button collapsed shadow-none rounded-pill"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseFive"

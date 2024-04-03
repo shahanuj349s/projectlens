@@ -2,10 +2,28 @@
   width: 100%;
 }
 
+.container {
+  border-radius: 3rem;
+}
+
 .image-content {
   background-color: #fff;
   bottom: 0;
   left: 0;
   width: 55%;
   border-top-right-radius: 1rem;
+}
+
+.imageDisplayText {
+  background-color: #d2ab67;
+  border-radius: 3rem;
+}
+
+.row > * {
+  padding: 0rem;
+}
+
+.imageDisplay {
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
 }

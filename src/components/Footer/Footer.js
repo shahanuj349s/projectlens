@@ -8,7 +8,7 @@ function Footer() {
       <div class="sb__footer section__padding">
         <div class="sb__footer-links">
           <div class="sb__footer-links-div">
-            <h4>Frequently Asked</h4>
+            <h4 className="footer-head">Frequently Asked</h4>
             <a href="/info_1">
               <p>Why good vision is so important</p>
             </a>
@@ -26,7 +26,7 @@ function Footer() {
             </a>
           </div>
           <div class="sb__footer-links-div">
-            <h4>Social Media</h4>
+            <h4 className="footer-head">Social Media</h4>
             <a href="/info_6">
               <p>Instagram</p>
             </a>
@@ -35,7 +35,7 @@ function Footer() {
             </a>
           </div>
           <div class="sb__footer-links-div">
-            <h4>Have a Question</h4>
+            <h4 className="footer-head">Have a Question</h4>
             <a href="/info_8">
               <p>Contact Us</p>
             </a>
