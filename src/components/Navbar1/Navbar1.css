@@ -1,0 +1,12 @@
+.navbarmain {
+    padding: 1rem 4rem;
+  }
+
+.navbardiv{
+  background-color: #0D3B66;
+}
+
+.dropdown-item:hover{
+  background-color: #d2ab67;
+  color: white;
+}

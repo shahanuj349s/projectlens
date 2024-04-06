@@ -17,6 +17,8 @@
 .imageDisplayText {
   background-color: #d2ab67;
   border-radius: 3rem;
+  color: white;
+  font-size: 18px;
 }
 
 .row > * {
@@ -26,4 +28,8 @@
 .imageDisplay {
   border-top-right-radius: 3rem;
   border-bottom-right-radius: 3rem;
+}
+
+.imageDisplayMain{
+  margin: 0rem 3.5rem;
 }

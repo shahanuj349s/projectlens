@@ -40,14 +40,21 @@ function Product1() {
     <div>
       <div>
         <img src={ProductImage} className="hero-image" />
+        <div class="product1-image-text">
+          <h3>OpenVista</h3>
+          <hr />
+          <p className="product1-image-subtext">
+            See every detail with clarity-enhanced lenses.
+          </p>
+        </div>
       </div>
 
       <div className="d-flex justify-content-around py-5">
         {topBlocks.map((block, index) => (
           <div key={index} className="col-2 ">
             <img src={icon} width={80} height={80} />
-            <div>{block.text}</div>
-            <div>{block.description}</div>
+            <div className="product1TextHeading">{block.text}</div>
+            <div className="product1TextDescription">{block.description}</div>
           </div>
         ))}
       </div>
@@ -57,29 +64,33 @@ function Product1() {
         {bottomBlocks.map((block, index) => (
           <div key={index} className="col-2">
             <img src={icon} width={80} height={80} alt="Icon" />
-            <div>{block.text}</div>
-            <div>{block.description}</div>
+            <div className="product1TextHeading">{block.text}</div>
+            <div className="product1TextDescription">{block.description}</div>
           </div>
         ))}
       </div>
 
       <div class="container py-3">
-        <div class="card">
-          <div class="row">
-            <div class="col-md-6 d-flex justify-content-center align-items-center px-5">
-              Enter a world of clarity with expertly developed lenses that
-              provide outstanding visual clarity. Lenses are designed to deliver
-              crystal-clear vision, making every detail crisp and sharp.
-              Experience the world with more clarity and definition. From bright
-              landscapes to intricate details, there is no compromise on clarity
-              in any scenario. Embrace the clarity you want and see the world in
-              an innovative manner.
-            </div>
-            <div class="col-md-6">
-              <img src={ProuctImage_1} class="d-block w-100" alt="..." />
-            </div>
+        {/* <div class="card"> */}
+        <div class="row product1Text">
+          <div class="col-md-6 d-flex justify-content-center align-items-center px-5">
+            Enter a world of clarity with expertly developed lenses that provide
+            outstanding visual clarity. Lenses are designed to deliver
+            crystal-clear vision, making every detail crisp and sharp.
+            Experience the world with more clarity and definition. From bright
+            landscapes to intricate details, there is no compromise on clarity
+            in any scenario. Embrace the clarity you want and see the world in
+            an innovative manner.
+          </div>
+          <div class="col-md-6">
+            <img
+              src={ProuctImage_1}
+              class="d-block w-100 product1-image"
+              alt="..."
+            />
           </div>
         </div>
+        {/* </div> */}
       </div>
     </div>
   );

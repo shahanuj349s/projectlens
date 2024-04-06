@@ -4,10 +4,10 @@ import "./ImageDisplay.css";
 
 function ImageDisplay() {
   return (
-    <div class="container py-3">
+    <div class="imageDisplayMain py-3">
       {/* <div class="card"> */}
       <div class="row imageDisplayText">
-        <div class="col-6 d-flex justify-content-center align-items-center px-5 ">
+        <div class="col-6 d-flex justify-content-center align-items-center px-5  ">
           In today's fast-growing world, It is essential for people to
           anticipate and adapt to change, whether in their personal or
           professional lives. People with a clear vision can better negotiate

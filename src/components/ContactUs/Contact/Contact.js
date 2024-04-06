@@ -80,14 +80,10 @@ function Contact() {
             </div>
           </div>
           <div className="conForm-Detail py-5 col-md-7 col-lg-8">
-            <div className="ContactTitle">Contact Azonic</div>
+            <div className="ContactTitle">Contact Xelariz</div>
             <div className="conForm-Detail2">
               {/* <form className='form1 py-3' onSubmit={handleSubmit} > */}
-              <form
-                className="form1 py-3"
-                action="https://formsubmit.co/devtestingexample1@gmail.com"
-                method="POST"
-              >
+              <form className="form1 py-3" method="POST">
                 <div className="form2">
                   <div className="row mb-4 rClass1">
                     <div className="col">
@@ -180,7 +176,6 @@ function Contact() {
                     <button
                       type="submit"
                       name="_next"
-                      value="https://carboex.vercel.app/contact"
                       className="submitConFBtn btn btn-primary btn-block mt-3"
                     >
                       {status}

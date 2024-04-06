@@ -34,6 +34,11 @@
   font-weight: bold;
 }
 
+.submitConFBtn:hover {
+  transform: scale(1.1);
+  transition: transform 1s ease-in-out;
+}
+
 @media (max-width: 767px) {
   .contactHeroImg {
     height: 40vh;
@@ -77,7 +82,7 @@
 
 .conInfo {
   color: aliceblue;
-  background-color: #16172e;
+  background-color: #0d3b66;
   padding: 3rem;
   border-radius: 5.4rem;
   z-index: 2;
@@ -99,7 +104,7 @@
 
 .conForm-Detail {
   border-radius: 5.4rem;
-  background-color: #efefef;
+  background-color: #d2ab67;
   padding: 3rem;
   margin-left: -7rem;
   z-index: 1;
@@ -123,8 +128,8 @@
 .submitConFBtn {
   padding: 0.5rem 1.4rem;
   border-radius: 1rem;
-  background-color: #16172e;
-  border-color: #16172e;
+  background-color: #07081e;
+  border-color: #07081e;
   text-transform: uppercase;
 }
 

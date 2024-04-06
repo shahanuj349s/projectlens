@@ -6,11 +6,13 @@
 }
 
 .companyText {
-  color: #ffe55c;
+  color: #d2ab67;
   /* color: #d2ab67; */
+  font-size: 30px;
 }
 
 .description {
   padding: 1rem 15rem;
   color: #ffffff;
+  font-size: 18px;
 }

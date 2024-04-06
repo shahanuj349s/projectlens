@@ -1,4 +1,38 @@
 .hero-image {
-    width: 100%;
-  }
-  
+  width: 100%;
+}
+
+.product2Text {
+  background-color: #d2ab67;
+  border-radius: 3rem;
+  font-size: 18px;
+  color: white;
+}
+
+.product2-image {
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+
+.product2TextHeading {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0.6rem 0rem 0.3rem 0rem;
+}
+
+.product2TextDescription {
+  font-size: 14px;
+}
+
+.product2-image-text {
+  position: absolute;
+  top: 23%;
+  left: 8%;
+  color: white;
+  width: 25%;
+  text-align: left;
+}
+
+.product2-image-subtext {
+  font-size: 1.2rem;
+}

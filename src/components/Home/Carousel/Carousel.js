@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel_1 from "../../../Assets/Carousel_1.jpeg";
 import Carousel_2 from "../../../Assets/Carousel_2.jpg";
-import Carousel_3 from "../../../Assets/Carousel_3.jpeg";
+import Carousel_3 from "../../../Assets/Carousel_3.jpg";
 import "./Carousel.css";
 
 function Carousel() {
@@ -35,31 +35,36 @@ function Carousel() {
           ></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active justify-content-center align-items-center">
+          <div class="carousel-item active">
             <img src={Carousel_1} class="d-block image" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>
-                Some representative placeholder content for the first slide.
+            <div class="carousel-text1">
+              <h1>See Beyond.</h1> <h1> See Better.</h1>
+              <p className="fs-5 pt-2">
+                Experience incomparable comfort and crystal-clear vision - as
+                every look deserves brilliance.
               </p>
             </div>
           </div>
-          <div class="carousel-item justify-content-center align-items-center">
+          <div class="carousel-item">
             <img src={Carousel_2} class="d-block image" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
+            <div class="carousel-text2">
+              {/* <h5>Second slide label</h5> */}
+              <h2>
+                Enhance everyday with lenses that reflect clarity, comfort, and
+                visual artistry.
+              </h2>
             </div>
           </div>
-          <div class="carousel-item justify-content-center align-items-center">
+          <div class="carousel-item">
             <img src={Carousel_3} class="d-block image" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
+            <div class="carousel-text3">
+              {/* <h5>Third slide label</h5> */}
+              <h5>
+                Lenses serve a vital role in improving visual, protecting the
+                eyes, and providing comfort. Advanced lens technology can shield
+                the eyes from harmful UV rays and blue light, preserving their
+                health.
+              </h5>
             </div>
           </div>
         </div>

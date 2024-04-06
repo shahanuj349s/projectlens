@@ -2,37 +2,37 @@
   width: 100%;
 }
 
-.product1Text {
+.product3Text {
   background-color: #d2ab67;
   border-radius: 3rem;
   font-size: 18px;
   color: white;
 }
 
-.product1-image {
+.product3-image {
   border-top-right-radius: 3rem;
   border-bottom-right-radius: 3rem;
 }
 
-.product1TextHeading {
+.product3TextHeading {
   font-size: 18px;
   font-weight: 600;
   padding: 0.6rem 0rem 0.3rem 0rem;
 }
 
-.product1TextDescription {
+.product3TextDescription {
   font-size: 14px;
 }
 
-.product1-image-text {
+.product3-image-text {
   position: absolute;
-  top: 20%;
+  top: 23%;
   left: 8%;
   color: white;
   width: 22%;
   text-align: left;
 }
 
-.product1-image-subtext{
+.product3-image-subtext {
   font-size: 1.2rem;
 }

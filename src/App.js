@@ -8,21 +8,22 @@ import ImageDisplay from "./components/Home/ImageDisplay/ImageDisplay";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Aboutus from "./pages/About";
-import Product1 from "./components/Product1/Product1";
-import Product2 from "./components/Product2/Product2";
-import Contact from "./components/ContactUs/Contact/Contact";
+import Product1 from "./pages/Product1";
+import Product2 from "./pages/Product2";
+import Product3 from "./pages/Product3";
+import ContactUs from "./pages/ContactUs";
 
 export default function App() {
   return (
     <div className="App">
-      <Navbar />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/about" element={<Aboutus />}></Route>
-          <Route path="/product" element={<Product1 />}></Route>
-          <Route path="/product1" element={<Product2 />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/about-us" element={<Aboutus />}></Route>
+          <Route path="/product1" element={<Product1 />}></Route>
+          <Route path="/product2" element={<Product2 />}></Route>
+          <Route path="/product3" element={<Product3 />}></Route>
+          <Route path="/contact-us" element={<ContactUs />}></Route>
         </Routes>
       </BrowserRouter>
       <Footer />

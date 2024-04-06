@@ -12,11 +12,11 @@ function FAQs() {
         <div class="accordion-item accordion-box-border mb-3 border border-secondary">
           <h2 class="accordion-header">
             <button
-              class="accordion-button shadow-none rounded-pill"
+              class="accordion-button collapsed shadow-none rounded-pill"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseOne"
-              aria-expanded="true"
+              aria-expanded="false"
               aria-controls="collapseOne"
             >
               Why Good Vision is important?

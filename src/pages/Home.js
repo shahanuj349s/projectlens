@@ -4,10 +4,12 @@ import CompanyDescription from "../components/Home/CompanyDescription/CompanyDes
 import ProductDisplay from "../components/Home/ProductDisplay/ProductDisplay";
 import ImageDisplay from "../components/Home/ImageDisplay/ImageDisplay";
 import FAQs from "../components/Home/FAQs/FAQs";
+import Navbar from "../components/Navbar/Navbar";
 
 function Home() {
   return (
     <div>
+      <Navbar />
       <Carousel />
       <CompanyDescription />
       <ProductDisplay />

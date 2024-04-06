@@ -1,29 +1,9 @@
 import React, { useState } from "react";
-import { Component } from "react";
-import "./Navbar.css";
-import { Link } from "react-router-dom";
+import "./Navbar1.css";
 import logo from "../../Assets/Logo2.png";
 
-function Navbar() {
+function Navbar1() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-  const handleScroll = () => {
-    const navbar = document.querySelector(".navbar");
-    if (window.scrollY > 0) {
-      navbar.classList.add("navbar-scrolled");
-    } else {
-      navbar.classList.remove("navbar-scrolled");
-    }
-  };
-
-  // Attach scroll event listener when component mounts
-  React.useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    // Remove the scroll event listener when component unmounts
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   const handleMouseEnter = () => {
     setIsDropdownOpen(true);
@@ -34,7 +14,7 @@ function Navbar() {
   };
 
   return (
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg sticky-top navbardiv">
       <div class="container-fluid navbarmain">
         <div className="flex align-items-center justify-content-between">
           <a class="navbar-brand" href="/">
@@ -114,4 +94,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Navbar1;

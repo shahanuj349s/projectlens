@@ -6,5 +6,39 @@
 }
 
 .carousel-item img {
-  height: 90vh; /* Make image height fill the container */
+  width: 100%;
+}
+
+.carousel-text1 {
+  position: absolute;
+  top: 20%;
+  left: 8%;
+  color: white;
+  width: 25%;
+  text-align: left;
+}
+
+.carousel-text2 {
+  position: absolute;
+  top: 25%;
+  left: 14%;
+  color: black;
+  width: 30%;
+  text-align: left;
+}
+.carousel-text2 > h2{
+  font-weight: 700;
+}
+
+.carousel-text3 {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  color: white;
+  width: 30%;
+  text-align: left;
+}
+
+.carousel-text3 > h5{
+  font-weight: 700;
 }

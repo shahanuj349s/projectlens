@@ -1,0 +1,16 @@
+.navbar {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-scrolled {
+  background-color: #0d3b66;
+}
+
+.navbarmain {
+  padding: 1rem 4rem;
+}
+
+.dropdown-item:hover{
+  background-color: #d2ab67;
+  color: white;
+}
