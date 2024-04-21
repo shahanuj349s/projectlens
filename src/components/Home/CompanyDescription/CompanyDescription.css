@@ -16,3 +16,36 @@
   color: #ffffff;
   font-size: 18px;
 }
+
+@media only screen and (max-width: 1200px) {
+  .description {
+    padding: 1rem 10rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .description {
+    padding: 1rem 8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .description {
+    padding: 1rem 6rem;
+    font-size: 16px;
+  }
+  .companyContainer {
+    border-radius: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .description {
+    padding: 1rem 2rem;
+    font-size: 14px;
+  }
+  .companyContainer {
+    margin: 2rem 2rem;
+    padding: 2rem 0rem;
+  }
+}

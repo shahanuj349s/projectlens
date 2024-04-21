@@ -6,8 +6,8 @@ function ImageDisplay() {
   return (
     <div class="imageDisplayMain py-3">
       {/* <div class="card"> */}
-      <div class="row imageDisplayText">
-        <div class="col-6 d-flex justify-content-center align-items-center px-5  ">
+      <div class="d-flex flex-lg-row flex-column-reverse imageDisplayContainer">
+        <div class="d-flex col-lg-6 justify-content-center align-items-center imageDisplayText">
           In today's fast-growing world, It is essential for people to
           anticipate and adapt to change, whether in their personal or
           professional lives. People with a clear vision can better negotiate
@@ -18,10 +18,9 @@ function ImageDisplay() {
           the face of uncertainty. Finally, clarity of vision acts as a guiding
           light, allowing individuals to prosper in a constantly changing world.
         </div>
-        <div class="col-6">
-          <img src={Image_1} class="d-block w-100 imageDisplay" alt="..." />
+        <div class="col-lg-6 imageDisplayDiv">
+          <img src={Image_1} class="imageDisplay" alt="..." />
         </div>
-        {/* </div> */}
       </div>
     </div>
   );

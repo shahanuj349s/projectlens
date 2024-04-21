@@ -85,9 +85,9 @@ function Contact() {
               {/* <form className='form1 py-3' onSubmit={handleSubmit} > */}
               <form className="form1 py-3" method="POST">
                 <div className="form2">
-                  <div className="row mb-4 rClass1">
+                  <div className="row rClass1 gap-3">
                     <div className="col">
-                      <div className="form-outline rClass12">
+                      <div className="form-outline rClass12 mb-4">
                         <label className="form-label font-weight-bold" for="">
                           First name:
                         </label>
@@ -104,7 +104,7 @@ function Contact() {
                       </div>
                     </div>
                     <div className="col">
-                      <div className="form-outline">
+                      <div className="form-outline mb-4">
                         <label className="form-label" for="">
                           Last name:
                         </label>
@@ -121,7 +121,7 @@ function Contact() {
                       </div>
                     </div>
                   </div>
-                  <div className="row mb-4 rClass2">
+                  <div className="row mb-4 rClass2 gap-3">
                     <div className="col">
                       <div className="form-outline mb-4">
                         <label className="form-label" for="">

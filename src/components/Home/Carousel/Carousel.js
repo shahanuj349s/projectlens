@@ -49,22 +49,24 @@ function Carousel() {
             <img src={Carousel_2} class="d-block image" alt="..." />
             <div class="carousel-text2">
               {/* <h5>Second slide label</h5> */}
-              <h2>
+              <h1>Clarity in every glance.</h1>
+              <p className="fs-5 pt-2">
                 Enhance everyday with lenses that reflect clarity, comfort, and
                 visual artistry.
-              </h2>
+              </p>
             </div>
           </div>
           <div class="carousel-item">
             <img src={Carousel_3} class="d-block image" alt="..." />
             <div class="carousel-text3">
               {/* <h5>Third slide label</h5> */}
-              <h5>
+              <h1>Dare to dream beyond what's possible.</h1>
+              <p className="fs-5 pt-2">
                 Lenses serve a vital role in improving visual, protecting the
                 eyes, and providing comfort. Advanced lens technology can shield
                 the eyes from harmful UV rays and blue light, preserving their
                 health.
-              </h5>
+              </p>
             </div>
           </div>
         </div>

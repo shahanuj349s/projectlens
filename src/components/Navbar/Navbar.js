@@ -91,7 +91,7 @@ function Navbar() {
                   </li>
                   <li>
                     <a class="dropdown-item" href="/product2">
-                      BLU-Armor
+                      BLU-Armour
                     </a>
                   </li>
                   <li>

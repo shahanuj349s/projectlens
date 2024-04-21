@@ -119,6 +119,7 @@
 
 .inputInfoAll {
   border-radius: 0.7rem;
+  
 }
 .sendMessageBtn {
   display: flex;
@@ -192,6 +193,7 @@
   .conForm-Detail {
     margin-left: 0;
     border-radius: 3rem;
+    margin-bottom: 3rem;
   }
   .conForm-Detail2 {
     margin-left: 0;
