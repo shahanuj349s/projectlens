@@ -1,9 +1,50 @@
-.vision {
-  /* border-top-right-radius: 3rem;
-  border-bottom-right-radius: 3rem; */
+.visionImage {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.visionContainer {
+  background-color: #0d3b66;
+  /* padding: 1rem; */
+  /* border-radius: 3rem; */
 }
 
 .visionText {
-  background-color: #0D3B66;
-  /* border-radius: 3rem; */
+  font-size: 18px;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .visionMain {
+    padding: 0px 24px;
+  }
+  .visionText {
+    font-size: 15px;
+    padding-top: 0rem;
+  }
+  .visionContainer {
+    border-radius: 1rem;
+  }
+  .visionImage {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .visionBodyMain {
+    padding: 0rem 2rem !important;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .visionText {
+    font-size: 13px;
+    padding: 0rem;
+  }
+  .visionBodyMain {
+    padding: 0rem !important;
+  }
 }

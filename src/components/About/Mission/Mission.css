@@ -1,9 +1,50 @@
-.mission {
-    /* border-top-left-radius: 3rem;
-    border-bottom-left-radius: 3rem; */
-  }
-  
+.missionImage {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.missionContainer {
+  background-color: #d2ab67;
+  /* padding: 1rem; */
+  /* border-radius: 3rem; */
+}
+
 .missionText {
-      background-color: #d2ab67;
-      /* border-radius: 3rem; */
+  font-size: 18px;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .missionMain {
+    padding: 0px 24px 24px;
+  }
+  .missionText {
+    font-size: 15px;
+    padding-top: 0rem;
+  }
+  .missionContainer {
+    border-radius: 1rem;
+  }
+  .missionImage {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .missionBodyMain {
+    padding: 0rem 2rem !important;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .missionText {
+    font-size: 13px;
+    padding: 0rem;
+  }
+  .missionBodyMain {
+    padding: 0rem !important;
+  }
 }
