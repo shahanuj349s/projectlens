@@ -7,14 +7,14 @@ import "./Product1.css";
 function Product1() {
   const blocks = [
     {
-      text: "Smudge Proof",
+      text: "Absolute Transparency",
       description:
-        "Lenses resist fingerprints and smudges, resulting in clearer vision with less frequent cleaning.",
+        "Offers maximum clarity and minimal distortion, providing a clear and Unhindered view.",
     },
     {
-      text: "UV Protection",
+      text: "Easy to Clean",
       description:
-        "Intended to protect the eyes from potential damage brought on by extended exposure to dangerous UV radiation by blocking ultraviolet (UV) rays from the sun.",
+        "Creates a smooth coating that blocks both moisture and dust, making it easy to remove fingerprints and keep clear vision.",
     },
     {
       text: "Scratch resistance",
@@ -27,9 +27,9 @@ function Product1() {
         "Coating to decrease reflections and glare, improving visual clarity and reducing blurred vision.",
     },
     {
-      text: "Durable Resistance",
+      text: "UV Protection",
       description:
-        "Lenses are long-lasting and resilient against scratches, damage, and other environmental conditions because of their design to endure wear and tear.",
+        "Intended to protect the eyes from potential damage brought on by extended exposure to dangerous UV rays from the sun.",
     },
   ];
 
@@ -49,7 +49,7 @@ function Product1() {
         </div>
       </div>
 
-      <div className="d-flex justify-content-around py-5">
+      {/* <div className="d-flex justify-content-around py-5">
         {topBlocks.map((block, index) => (
           <div key={index} className="col-2 ">
             <img src={icon} width={80} height={80} />
@@ -57,12 +57,16 @@ function Product1() {
             <div className="product1TextDescription">{block.description}</div>
           </div>
         ))}
-      </div>
+      </div> */}
 
-      <div className="d-flex justify-content-evenly py-5">
-        {/* Mapping over bottomBlocks */}
-        {bottomBlocks.map((block, index) => (
-          <div key={index} className="col-2">
+      <div className="d-flex block-container-product1 py-5 flex-wrap">
+        {blocks.map((block, index) => (
+          <div
+            key={index}
+            className={`col-md-2 col-sm-4 block-main-product1 ${
+              index < 3 ? "mb-5" : "mb-4 text-center"
+            }`}
+          >
             <img src={icon} width={80} height={80} alt="Icon" />
             <div className="product1TextHeading">{block.text}</div>
             <div className="product1TextDescription">{block.description}</div>
@@ -70,10 +74,10 @@ function Product1() {
         ))}
       </div>
 
-      <div class="container py-3">
+      <div class="product1-container py-3">
         {/* <div class="card"> */}
-        <div class="row product1Text">
-          <div class="col-md-6 d-flex justify-content-center align-items-center px-5">
+        <div class="d-flex flex-md-row flex-column-reverse product1TextContainer">
+          <div class="d-flex col-md-6 justify-content-center align-items-center px-5 product1Text">
             Enter a world of clarity with expertly developed lenses that provide
             outstanding visual clarity. Lenses are designed to deliver
             crystal-clear vision, making every detail crisp and sharp.
@@ -82,12 +86,8 @@ function Product1() {
             in any scenario. Embrace the clarity you want and see the world in
             an innovative manner.
           </div>
-          <div class="col-md-6">
-            <img
-              src={ProuctImage_1}
-              class="d-block w-100 product1-image"
-              alt="..."
-            />
+          <div class="d-flex col-md-6 ">
+            <img src={ProuctImage_1} class="product1-image" alt="..." />
           </div>
         </div>
         {/* </div> */}

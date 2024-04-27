@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar1.css";
 import logo from "../../Assets/Logo2.png";
+import { NavLink } from "react-router-dom";
 
 function Navbar1() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -13,84 +14,136 @@ function Navbar1() {
     setIsDropdownOpen(false);
   };
 
+  const [createDropDown, setCreateDropDown] = useState(false);
+  const [activeComponent, setActiveComponent] = useState("/");
+
+  const handleItemClick = (componentName) => {
+    setActiveComponent(componentName);
+  };
+
+  const showCreateDropDown = () => {
+    setCreateDropDown(!createDropDown);
+  };
+
   return (
-    <nav class="navbar navbar-expand-lg sticky-top navbardiv">
-      <div class="container-fluid navbarmain">
-        <div className="flex align-items-center justify-content-between">
-          <a class="navbar-brand" href="/">
-            <img src={logo} width={180} />
+    <>
+      <nav
+        className={`navbar navbar-expand-lg navbar-light sticky-top py-2 `}
+        role="navigation"
+      >
+        <div className="container-fluid px-4 px-md-5 navbar">
+          <a className="d-flex navbar-brand" href="/">
+            {/* <h1>LOGO</h1> */}
+            <img src={logo} className="img-logo" />
           </a>
-        </div>
-        <div>
+
           <button
-            class="navbar-toggler"
             type="button"
+            className="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
+            data-bs-target="#navbarRightAlignExample"
+            aria-controls="navbarRightAlignExample"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="toggler-icon top-bar"></span>
+            <span className="toggler-icon middle-bar"></span>
+            <span className="toggler-icon bottom-bar"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 pe-3">
-              <li class="nav-item px-2">
-                <a
-                  class="nav-link active text-white"
-                  aria-current="page"
-                  href="/about-us"
-                >
-                  About Us
-                </a>
-              </li>
+
+          <div
+            className="collapse navbar-collapse justify-content-end"
+            id="navbarRightAlignExample"
+          >
+            <ul className="navbar-nav ml-auto align-items-center mb-2 mb-lg-0 navbar-container">
               <li
-                class="nav-item dropdown"
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
+                className="nav-item py-2 d-lg-none"
+                onClick={showCreateDropDown}
               >
                 <a
-                  class="nav-link dropdown-toggle text-white"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+                  className={`nav-link navbar-content px-1 p-0 d-flex align-items-center ${
+                    activeComponent === "create" && createDropDown
+                      ? "active"
+                      : ""
+                  }`}
+                  onClick={() => handleItemClick("create")}
                 >
-                  Our Products
+                  Create
+                  <div className="px-2">
+                    <i
+                      className="fas fa-angle-down"
+                      style={{
+                        transform: createDropDown
+                          ? "rotate(-180deg)"
+                          : "rotate(0)",
+                        transition: "transform 0.5s ease-in-out",
+                      }}
+                    ></i>
+                  </div>
                 </a>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                  className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}
-                >
-                  <li>
-                    <a class="dropdown-item" href="/product1">
-                      OpenVista
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/product2">
-                      BLU-Armour
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/product3">
-                      TailorCraft
-                    </a>
-                  </li>
-                </ul>
+
+                {createDropDown && (
+                  <div
+                    className="create-dropdown p-3 text-center"
+                    onClick={showCreateDropDown}
+                  >
+                    <div className={`d-flex py-1`}>
+                      <a
+                        href="/dataset-marketplace/create-dataset"
+                        className="link-style"
+                      >
+                        Create Dataset
+                      </a>
+                    </div>
+                    <div className={`d-flex py-1`}>
+                      <a
+                        href="/model-marketplace/create-model"
+                        className="link-style"
+                      >
+                        Create Model
+                      </a>
+                    </div>
+                  </div>
+                )}
               </li>
-              <li class="nav-item px-2">
-                <a class="nav-link text-white" href="/contact-us">
-                  Contact Us
-                </a>
+              <li className="nav-item py-2 d-lg-none">
+                <NavLink
+                  className="nav-link navbar-content px-1 p-0 d-flex align-items-center"
+                  to="/user-dashboard"
+                >
+                  Dashboard
+                </NavLink>
+              </li>
+              <li className="nav-item py-2 d-lg-none">
+                <NavLink
+                  className="nav-link navbar-content px-1 p-0 d-flex align-items-center"
+                  to="/dataset-marketplace"
+                >
+                  Dataset Marketplace
+                </NavLink>
+              </li>
+              <li className="nav-item py-2 d-lg-none">
+                <NavLink
+                  className="nav-link navbar-content px-1 p-0 d-flex align-items-center"
+                  to="/model-marketplace"
+                >
+                  Model Marketplace
+                </NavLink>
+              </li>
+
+              <li className="nav-item py-2 d-lg-none">
+                <NavLink
+                  className="nav-link navbar-content px-1 p-0 d-flex align-items-center"
+                  to="/de-computation"
+                >
+                  Decentralized Computation
+                </NavLink>
               </li>
             </ul>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 }
 

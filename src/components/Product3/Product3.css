@@ -3,10 +3,13 @@
 }
 
 .product3Text {
-  background-color: #d2ab67;
-  border-radius: 3rem;
   font-size: 18px;
   color: white;
+}
+
+.product3TextContainer {
+  border-radius: 3rem;
+  background-color: #d2ab67;
 }
 
 .product3-image {
@@ -24,6 +27,10 @@
   font-size: 14px;
 }
 
+.block-main-product3 {
+  min-width: 140px;
+}
+
 .product3-image-text {
   position: absolute;
   top: 23%;
@@ -35,4 +42,88 @@
 
 .product3-image-subtext {
   font-size: 1.2rem;
+}
+
+.product3-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-position: center;
+}
+
+.product3-container {
+  padding: 0rem 3rem;
+}
+
+.block-container-product3 {
+  justify-content: center;
+  gap: 3rem 9rem;
+  padding: 0rem 7rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .product3Text {
+    font-size: 16px;
+  }
+
+  .block-container-product3 {
+    gap: 3rem 7rem;
+    padding: 0rem 7rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .product3Text {
+    padding: 2rem 1rem !important;
+  }
+
+  .block-container-product3 {
+    gap: 3rem 6rem;
+    padding: 0rem 5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .product3-image {
+    border-top-right-radius: 3rem;
+    border-top-left-radius: 3rem;
+    border-bottom-right-radius: 0rem;
+  }
+
+  .block-container-product3 {
+    gap: 2rem 5rem;
+    padding: 0rem 5rem;
+  }
+
+  .block-main-product3 {
+    min-width: 150px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .product3Text {
+    font-size: 14px;
+  }
+
+  .product3TextContainer {
+    border-radius: 2rem;
+  }
+
+  .product3-image {
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+  }
+
+  .product3Text {
+    padding: 1rem 1rem !important;
+  }
+
+  .product3-container {
+    padding: 0rem 2rem;
+  }
+
+  .block-main-product3 {
+    min-width: 80px;
+    margin-bottom: 1rem !important;
+  }
 }

@@ -3,10 +3,13 @@
 }
 
 .product1Text {
-  background-color: #d2ab67;
-  border-radius: 3rem;
   font-size: 18px;
   color: white;
+}
+
+.product1TextContainer {
+  border-radius: 3rem;
+  background-color: #d2ab67;
 }
 
 .product1-image {
@@ -24,6 +27,10 @@
   font-size: 14px;
 }
 
+.block-main-product1 {
+  min-width: 140px;
+}
+
 .product1-image-text {
   position: absolute;
   top: 20%;
@@ -33,6 +40,91 @@
   text-align: left;
 }
 
-.product1-image-subtext{
+.product1-image-subtext {
   font-size: 1.2rem;
+}
+
+.product1-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-position: center;
+}
+
+.product1-container {
+  padding: 0rem 3rem;
+}
+
+.block-container-product1 {
+  justify-content: center;
+  gap: 3rem 9rem;
+  padding: 0rem 7rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .product1Text {
+    font-size: 16px;
+  }
+
+  .block-container-product1 {
+    gap: 3rem 7rem;
+    padding: 0rem 7rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .product1Text {
+    padding: 2rem 1rem !important;
+  }
+
+  .block-container-product1 {
+    gap: 3rem 6rem;
+    padding: 0rem 5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .product1-image {
+    border-top-right-radius: 3rem;
+    border-top-left-radius: 3rem;
+    border-bottom-right-radius: 0rem;
+  }
+
+  .block-container-product1 {
+    gap: 2rem 5rem;
+    padding: 0rem 5rem;
+  }
+
+  .block-main-product1 {
+    min-width: 150px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .product1Text {
+    font-size: 14px;
+  }
+
+  .product1TextContainer {
+    border-radius: 2rem;
+  }
+
+  .product1-image {
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+  }
+
+  .product1Text {
+    padding: 1rem 1rem !important;
+  }
+
+  .product1-container {
+    gap: 0rem 3rem;
+    padding: 0rem 3rem;
+  }
+
+  .block-main-product1 {
+    min-width: 80px;
+    margin-bottom: 1rem !important;
+  }
 }
