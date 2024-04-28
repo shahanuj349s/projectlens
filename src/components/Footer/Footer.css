@@ -59,6 +59,8 @@ a {
 .sb__footer-below-links {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .sb__footer-below-links p {
@@ -83,4 +85,20 @@ hr {
 
 .footer-head {
   color: #d2ab67;
+}
+
+@media only screen and (max-width: 768px) {
+  .sb__footer-links {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  .sb__footer-links-image {
+    padding-bottom: 2rem;
+  }
+  .footer-image {
+    width: 150px;
+  }
+  .section__padding {
+    padding: 2rem 2rem;
+  }
 }

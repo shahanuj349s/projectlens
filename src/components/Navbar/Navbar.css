@@ -1,3 +1,16 @@
+.navbarmain {
+  background-color: transparent !important;
+}
+
+/* .navbar-scrolled {
+  background-color: #0d3b66;
+} */
+
+.navbarmain-scrolled {
+  background-color: #0d3b66;
+  transition: background-color 0.3s ease-in-out;
+}
+
 .sticky-top {
   background: "transparent";
   /* position: sticky; */
@@ -32,6 +45,7 @@
   outline: none;
   box-shadow: none;
   border: 0;
+  
 }
 .navbar.scrolled {
   background: linear-gradient(
@@ -50,7 +64,7 @@
   position: absolute;
   height: 3px;
   width: 100%;
-  background: black;
+  background: white;
   border-radius: 1px;
   opacity: 1;
   left: 0;
@@ -105,14 +119,14 @@
 }
 
 .img-logo {
-  width: 300px;
+  width: 150px;
 }
 
 /* Color of 3 lines */
 
 .navbar-toggler.collapsed .toggler-icon {
   /* background: linear-gradient( 263deg, rgba(252,74,74,1) 0%, rgba(0,212,255,1) 100% ); */
-  background: black;
+  background: white;
 }
 
 /* .navbar-image{
@@ -187,7 +201,20 @@
   border-radius: 0.5rem;
 }
 
-@media only screen and (max-width: 991px) {
+.landing-navbar {
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.8;
+  color: #fff !important;
+  border-bottom: none;
+  transition: border-bottom 0.2s;
+}
+
+.navbar {
+  background-color: #0d3b66;
+}
+
+@media only screen and (max-width: 992px) {
   ul {
     height: 100vh !important;
   }
@@ -205,13 +232,6 @@
   .for-desktop {
     display: none;
   }
-  .navbar-light {
-    background: linear-gradient(
-      to right,
-      rgb(233, 241, 255),
-      rgb(181, 210, 254)
-    );
-  }
 
   .navbar-content {
     display: flex;
@@ -220,7 +240,12 @@
     font-size: 1.1rem !important;
   }
   .img-logo {
-    width: 250px;
+    width: 140px;
+  }
+
+  .dropdown-menu {
+    max-height: 115px;
+    border: none;
   }
 }
 

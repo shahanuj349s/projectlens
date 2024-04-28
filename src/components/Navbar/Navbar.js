@@ -1,25 +1,23 @@
-import React, { useState } from "react";
-import { Component } from "react";
-import "./Navbar.css";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../Assets/Logo2.png";
+import "./Navbar.css";
 
 function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isTogglerOpen, setIsTogglerOpen] = useState(false);
 
   const handleScroll = () => {
-    const navbar = document.querySelector(".navbar");
     if (window.scrollY > 0) {
-      navbar.classList.add("navbar-scrolled");
+      setScrolled(true);
     } else {
-      navbar.classList.remove("navbar-scrolled");
+      setScrolled(false);
     }
   };
 
-  // Attach scroll event listener when component mounts
-  React.useEffect(() => {
+  useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    // Remove the scroll event listener when component unmounts
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -33,82 +31,104 @@ function Navbar() {
     setIsDropdownOpen(false);
   };
 
+  const handleTogglerClick = () => {
+    setIsTogglerOpen(!isTogglerOpen);
+    // Add code to handle background color change when toggler is clicked
+    if (!isTogglerOpen) {
+      setScrolled(true);
+    } else {
+      if (window.scrollY === 0) {
+        setScrolled(false);
+      }
+    }
+  };
+
   return (
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container-fluid navbarmain">
-        <div className="flex align-items-center justify-content-between">
-          <a class="navbar-brand" href="/">
-            <img src={logo} width={180} />
-          </a>
-        </div>
-        {/* <div> */}
+    <nav
+      className={`navbar navbar-expand-lg navbar-light fixed-top py-2 ${
+        scrolled || isTogglerOpen ? "navbarmain-scrolled" : "navbarmain"
+      }`}
+      role="navigation"
+    >
+      <div className="container-fluid px-4 px-md-5 navbar navbarmain">
+        <a className="d-flex navbar-brand" href="/">
+          <img src={logo} className="img-logo" alt="Logo" />
+        </a>
+
         <button
-          class="navbar-toggler"
           type="button"
+          className="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#navbarRightAlignExample"
+          aria-controls="navbarRightAlignExample"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          onClick={handleTogglerClick}
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="toggler-icon top-bar"></span>
+          <span className="toggler-icon middle-bar"></span>
+          <span className="toggler-icon bottom-bar"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 pe-3">
-            <li class="nav-item px-2">
+
+        <div
+          className="collapse navbar-collapse justify-content-end"
+          id="navbarRightAlignExample"
+        >
+          <ul className="d-lg-flex navbar-nav align-items-center mb-2 mb-lg-0 navbar-container">
+            <li className="nav-item py-2 px-lg-2">
               <a
-                class="nav-link active text-white"
-                aria-current="page"
+                className="nav-link px-1 p-0 d-flex align-items-center"
                 href="/about-us"
               >
-                About Us
+                <span className="landing-navbar">About Us</span>
               </a>
             </li>
             <li
-              class="nav-item dropdown"
+              className="nav-item dropdown"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
               <a
-                class="nav-link dropdown-toggle text-white"
+                className="nav-link dropdown-toggle text-white d-flex align-items-center px-1"
                 href="#"
                 id="navbarDropdownMenuLink"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Our Products
+                <span className="landing-navbar">Our Products</span>
               </a>
               <ul
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
                 className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}
+                aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>
-                  <a class="dropdown-item" href="/product1">
+                  <a className="dropdown-item" href="/product1">
                     OpenVista
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="/product2">
+                  <a className="dropdown-item" href="/product2">
                     BLU-Armour
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="/product3">
+                  <a className="dropdown-item" href="/product3">
                     TailorCraft
                   </a>
                 </li>
               </ul>
             </li>
-            <li class="nav-item px-2">
-              <a class="nav-link text-white" href="/contact-us">
-                Contact Us
+            <li className="nav-item py-2 px-lg-2">
+              <a
+                className="nav-link px-1 p-0 d-flex align-items-center"
+                href="/contact-us"
+              >
+                <span className="landing-navbar">Contact Us</span>
               </a>
             </li>
           </ul>
         </div>
-        {/* </div> */}
       </div>
     </nav>
   );
