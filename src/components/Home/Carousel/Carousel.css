@@ -38,6 +38,11 @@
 }
 .carousel2-text-heading {
   font-weight: 700;
+  font-size: 2.3rem;
+}
+
+.carousel2-text-desc {
+  font-size: 1.2rem;
 }
 
 .carousel3-text-container {
@@ -51,6 +56,11 @@
 
 .carousel3-text-heading {
   font-weight: 700;
+  font-size: 2.3rem;
+}
+
+.carousel3-text-desc {
+  font-size: 1rem;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -74,22 +84,39 @@
   .carousel1-text-desc {
     font-size: 1rem;
   }
+
+  .carousel-item2-image {
+    width: 100%;
+    height: 97lvh;
+    object-fit: cover;
+    object-position: 60% center;
+  }
+
+  .carousel2-text-container {
+    top: 25%;
+    left: 15%;
+    width: 24%;
+  }
+
+  .carousel2-text-heading {
+    font-size: 2rem;
+  }
+
+  .carousel2-text-desc {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 992px) {
-  .carousel-item {
-    object-position: center;
-  }
+
   .carousel-item1-image {
     width: 100%;
     height: 97lvh;
-    /* width: auto; */
     object-fit: cover;
     object-position: 40% center;
-    /* object-position: center; */
   }
   .carousel1-text-container {
-    top: 68%;
+    top: 60%;
     left: 12%;
     width: 30%;
   }
@@ -101,23 +128,40 @@
   .carousel1-text-desc {
     font-size: 0.9rem;
   }
+
+  .carousel-item2-image {
+    width: 100%;
+    height: 97lvh;
+    object-fit: cover;
+    object-position: 60% center;
+  }
+  .carousel2-text-container {
+    top: 25%;
+    left: 15%;
+    width: 24%;
+  }
+
+  .carousel2-text-heading {
+    font-size: 1.8rem;
+  }
+
+  .carousel2-text-desc {
+    font-size: 0.9rem;
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
-  .carousel-item {
-    object-position: center;
-  }
+
   .carousel-item1-image {
     width: 100%;
     height: 97lvh;
-    /* width: auto; */
     object-fit: cover;
     object-position: 40% center;
-    /* object-position: center; */
   }
 
   .carousel1-text-container {
-    top: 68%;
+    top: 63%;
     left: 12%;
     width: 34%;
   }
@@ -129,26 +173,42 @@
   .carousel1-text-desc {
     font-size: 0.8rem;
   }
+
+  .carousel-item2-image {
+    width: 100%;
+    height: 97lvh;
+    object-fit: cover;
+    object-position: 60% center;
+  }
+
+  .carousel2-text-container {
+    top: 27%;
+    left: 13%;
+    width: 26%;
+  }
+
+  .carousel2-text-heading {
+    font-size: 1.4rem;
+  }
+
+  .carousel2-text-desc {
+    font-size: 0.8rem;
+  }
 }
 
 @media only screen and (max-width: 576px) {
-  .carousel-item {
-    object-position: center;
-  }
 
   .carousel-item1-image {
     width: 100%;
     height: 97lvh;
-    /* width: auto; */
     object-fit: cover;
     object-position: 40% center;
-    /* object-position: center; */
   }
 
   .carousel1-text-container {
-    top: 68%;
+    top: 64%;
     left: 12%;
-    width: 42%;
+    width: 50%;
   }
 
   .carousel-text-h1eading {
@@ -156,6 +216,27 @@
   }
 
   .carousel1-text-desc {
+    font-size: 0.8rem;
+  }
+
+  .carousel-item2-image {
+    width: 100%;
+    height: 97lvh;
+    object-fit: cover;
+    object-position: 58% center;
+  }
+
+  .carousel2-text-container {
+    top: 52%;
+    left: 12%;
+    width: 34%;
+  }
+
+  .carousel2-text-heading {
+    font-size: 1.3rem;
+  }
+
+  .carousel2-text-desc {
     font-size: 0.8rem;
   }
 }

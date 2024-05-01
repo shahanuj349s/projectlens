@@ -73,7 +73,9 @@ function Carousel() {
               alt="..."
             />
             <div class="carousel3-text-container">
-              <div className="carousel3-text-heading">Dare to dream beyond what's possible.</div>
+              <div className="carousel3-text-heading">
+                Dare to dream beyond what's possible.
+              </div>
               <p className="carousel3-text-desc pt-2">
                 Lenses serve a vital role in improving visual, protecting the
                 eyes, and providing comfort. Advanced lens technology can shield
