@@ -1,7 +1,7 @@
 import React from "react";
-import ProductImage from "../../Assets/Product_description_2.jpg";
+import ProductImage from "../../Assets/Product_description_2.jpeg";
 import icon from "../../Assets/Icon1.png";
-import ProuctImage_2 from "../../Assets/ProductImage_2.jpg";
+import ProuctImage_2 from "../../Assets/ProductImage_2.jpeg";
 import "./Product2.css";
 
 function Product2() {
@@ -38,7 +38,7 @@ function Product2() {
   return (
     <div>
       <div>
-        <img src={ProductImage} className="hero-image" />
+        <img src={ProductImage} className="hero-image2" />
         <div class="product2-image-text">
           <h3>BLU-Armour</h3>
           <hr />

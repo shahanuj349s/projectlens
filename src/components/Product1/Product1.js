@@ -1,5 +1,5 @@
 import React from "react";
-import ProductImage from "../../Assets/Product_description_1.jpg";
+import ProductImage from "../../Assets/Product_description_1.jpeg";
 import icon from "../../Assets/Icon1.png";
 import ProuctImage_1 from "../../Assets/ProductImage_1.jpg";
 import "./Product1.css";

@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel_1 from "../../../Assets/Carousel_1.jpeg";
 import Carousel_2 from "../../../Assets/Carousel_2.jpg";
-import Carousel_3 from "../../../Assets/Carousel_3.jpg";
+import Carousel_3 from "../../../Assets/Carousel_3.jpeg";
 import "./Carousel.css";
 
 function Carousel() {
@@ -35,33 +35,46 @@ function Carousel() {
           ></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src={Carousel_1} class="d-block image" alt="..." />
-            <div class="carousel-text1">
-              <h1>See Beyond.</h1> <h1> See Better.</h1>
-              <p className="fs-5 pt-2">
+          <div class="carousel-item carousel-item1-container active">
+            <img
+              src={Carousel_1}
+              class="d-block image carousel-item1-image"
+              alt="..."
+            />
+            <div class="carousel1-text-container">
+              <div className="carousel1-text-heading">See Beyond.</div>{" "}
+              <div className="carousel1-text-heading"> See Better.</div>
+              <p className="carousel1-text-desc pt-2">
                 Experience incomparable comfort and crystal-clear vision - as
                 every look deserves brilliance.
               </p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src={Carousel_2} class="d-block image" alt="..." />
-            <div class="carousel-text2">
-              {/* <h5>Second slide label</h5> */}
-              <h1>Clarity in every glance.</h1>
-              <p className="fs-5 pt-2">
+            <img
+              src={Carousel_2}
+              class="d-block image carousel-item2-image"
+              alt="..."
+            />
+            <div class="carousel2-text-container">
+              <div className="carousel2-text-heading">
+                Clarity in every glance.
+              </div>
+              <p className="carousel2-text-desc pt-2">
                 Enhance everyday with lenses that reflect clarity, comfort, and
                 visual artistry.
               </p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src={Carousel_3} class="d-block image" alt="..." />
-            <div class="carousel-text3">
-              {/* <h5>Third slide label</h5> */}
-              <h1>Dare to dream beyond what's possible.</h1>
-              <p className="fs-5 pt-2">
+            <img
+              src={Carousel_3}
+              class="d-block image carousel-item3-image"
+              alt="..."
+            />
+            <div class="carousel3-text-container">
+              <div className="carousel3-text-heading">Dare to dream beyond what's possible.</div>
+              <p className="carousel3-text-desc pt-2">
                 Lenses serve a vital role in improving visual, protecting the
                 eyes, and providing comfort. Advanced lens technology can shield
                 the eyes from harmful UV rays and blue light, preserving their

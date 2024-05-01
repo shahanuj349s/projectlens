@@ -1,7 +1,7 @@
 import React from "react";
-import Product_description_1 from "../../../Assets/Product_description_1.jpg";
-import Product_description_2 from "../../../Assets/Product_description_2.jpg";
-import Product_description_3 from "../../../Assets/Product_discription_31.jpg";
+import Product_description_1 from "../../../Assets/Product_description_1.jpeg";
+import Product_description_2 from "../../../Assets/Product_description_2.jpeg";
+import Product_description_3 from "../../../Assets/Product_description_3.jpg";
 import "./ProductDisplay.css";
 
 function ProductDisplay() {
