@@ -176,16 +176,16 @@
 }
 
 @media only screen and (max-width: 420px) {
-  .block-container-product2 {
+  .block-container-product3 {
     gap: 2rem 2rem;
     padding: 0rem 2rem;
   }
 
-  .block-main-product2 {
+  .block-main-product3 {
     max-width: 120px;
   }
 
-  .product2TextHeading {
+  .product3TextHeading {
     font-size: 15px;
   }
 }
