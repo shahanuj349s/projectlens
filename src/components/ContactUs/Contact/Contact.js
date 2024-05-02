@@ -27,7 +27,7 @@ function Contact() {
             <div className="conInfo2">
               <h1 className="conInfo-Head">Contact Information</h1>
               <p className="conInfo-TagLine">
-                Fill up the form and our team will get back to you within 24
+                For email our team will get back to you within 24
                 hours.
               </p>
               <div className="conIcons1 ">
