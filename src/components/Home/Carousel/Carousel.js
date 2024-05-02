@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel_1 from "../../../Assets/Carousel_1.jpeg";
 import Carousel_2 from "../../../Assets/Carousel_2.jpg";
-import Carousel_3 from "../../../Assets/Artboard 1.jpg";
+import Carousel_3 from "../../../Assets/Carousel_3.jpg";
 import "./Carousel.css";
 
 function Carousel() {
@@ -10,7 +10,7 @@ function Carousel() {
       <div
         id="carouselExampleCaptions"
         class="carousel slide"
-        // data-bs-ride="carousel"
+        data-bs-ride="carousel"
       >
         <div class="carousel-indicators">
           <button
