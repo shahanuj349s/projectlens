@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel_1 from "../../../Assets/Carousel_1.jpeg";
 import Carousel_2 from "../../../Assets/Carousel_2.jpg";
-import Carousel_3 from "../../../Assets/Carousel_3.jpeg";
+import Carousel_3 from "../../../Assets/Artboard 1.jpg";
 import "./Carousel.css";
 
 function Carousel() {
@@ -10,7 +10,7 @@ function Carousel() {
       <div
         id="carouselExampleCaptions"
         class="carousel slide"
-        data-bs-ride="carousel"
+        // data-bs-ride="carousel"
       >
         <div class="carousel-indicators">
           <button
@@ -74,14 +74,20 @@ function Carousel() {
             />
             <div class="carousel3-text-container">
               <div className="carousel3-text-heading">
-                Dare to dream beyond what's possible.
+                <span className="what">What</span>
+                <span class="styled-text">How</span> you look
+                <span class="arrow">
+                  ^ <span className="also">also</span>
+                </span>
+                matters.
+                {/* Dare to dream beyond what's possible. */}
               </div>
-              <p className="carousel3-text-desc pt-2">
+              {/* <p className="carousel3-text-desc pt-2">
                 Lenses serve a vital role in improving visual, protecting the
                 eyes, and providing comfort. Advanced lens technology can shield
                 the eyes from harmful UV rays and blue light, preserving their
                 health.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>

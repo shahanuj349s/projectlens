@@ -23,7 +23,7 @@ function Contact() {
     <div>
       <div className="conForm-Main container-fluid">
         <div className="conForm-Main2">
-          <div className="conInfo my-5 col-md-5 col-lg-4">
+          <div className="conInfo my-5 my-md-3 col-11 col-md-9 col-lg-7 mx-auto">
             <div className="conInfo2">
               <h1 className="conInfo-Head">Contact Information</h1>
               <p className="conInfo-TagLine">
@@ -77,113 +77,6 @@ function Contact() {
                   </a>
                 </span>
               </div>
-            </div>
-          </div>
-          <div className="conForm-Detail py-5 col-md-7 col-lg-8">
-            <div className="ContactTitle">Contact Xelariz</div>
-            <div className="conForm-Detail2">
-              {/* <form className='form1 py-3' onSubmit={handleSubmit} > */}
-              <form className="form1 py-3" method="POST">
-                <div className="form2">
-                  <div className="row rClass1 gap-3">
-                    <div className="col">
-                      <div className="form-outline rClass12 mb-4">
-                        <label className="form-label font-weight-bold" for="">
-                          First name:
-                        </label>
-                        <input
-                          type="text"
-                          id=""
-                          className="form-control inputInfoAll"
-                          name="firstName"
-                          placeholder="Please enter your firstname"
-                          value={formData.firstName}
-                          onChange={handleChange}
-                          required
-                        />
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="form-outline mb-4">
-                        <label className="form-label" for="">
-                          Last name:
-                        </label>
-                        <input
-                          type="text"
-                          id=""
-                          className="form-control inputInfoAll"
-                          name="lastName"
-                          placeholder="Please enter your lastname"
-                          value={formData.lastName}
-                          onChange={handleChange}
-                          required
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row mb-4 rClass2 gap-3">
-                    <div className="col">
-                      <div className="form-outline mb-4">
-                        <label className="form-label" for="">
-                          Email:
-                        </label>
-                        <input
-                          type="email"
-                          id=""
-                          className="form-control inputInfoAll"
-                          name="email"
-                          placeholder="Please enter a valid email address"
-                          value={formData.email}
-                          onChange={handleChange}
-                          required
-                        />
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="form-outline mb-4">
-                        <label className="form-label" for="">
-                          Phone:
-                        </label>
-
-                        <input
-                          type="tel"
-                          id=""
-                          className="form-control inputInfoAll"
-                          name="phone"
-                          placeholder="Please enter your phone number"
-                          value={formData.phone}
-                          onChange={handleChange}
-                          required
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="form-outline mb-4">
-                    <label className="form-label" for="">
-                      Your Message:
-                    </label>
-                    <textarea
-                      placeholder="TYPE YOUR MESSAGE HERE..."
-                      className="form-control inputInfoAll"
-                      id=""
-                      rows="4"
-                      name="message"
-                      value={formData.message}
-                      required
-                    ></textarea>
-                  </div>
-                  <div className="sendMessageBtn">
-                    <button
-                      type="submit"
-                      name="_next"
-                      className="submitConFBtn btn btn-primary btn-block mt-3"
-                    >
-                      {status}
-                    </button>
-                    {/* <button type="submit" value="Send Message" className="submitConFBtn btn btn-primary btn-block mt-3">{status}</button> */}
-                  </div>
-                </div>
-              </form>
             </div>
           </div>
         </div>

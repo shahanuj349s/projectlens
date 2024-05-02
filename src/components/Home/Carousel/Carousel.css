@@ -47,20 +47,55 @@
 
 .carousel3-text-container {
   position: absolute;
-  top: 25%;
+  top: 30%;
   left: 10%;
   color: white;
-  width: 30%;
+  width: 40%;
   text-align: left;
 }
 
 .carousel3-text-heading {
-  font-weight: 700;
+  /* font-weight: 700; */
   font-size: 2.3rem;
+  position: relative;
 }
 
 .carousel3-text-desc {
   font-size: 1rem;
+}
+
+.styled-text {
+  position: relative;
+  text-decoration: line-through;
+  text-decoration-color: #d2ab67;
+  text-decoration-thickness: 3px;
+}
+
+.what {
+  font-size: 2rem;
+  position: absolute;
+  bottom: 40px;
+  left: -4px;
+  text-align: center;
+  padding: 0 5px;
+  color: #d2ab67;
+}
+
+.arrow {
+  position: relative;
+  display: inline-block;
+  font-weight: lighter;
+  color: #d2ab67;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.also {
+  font-size: 2rem;
+  position: absolute;
+  bottom: 40px; /* Adjust this value as needed to position it above the arrow */
+  left: 50%; /* Position it in the middle horizontally */
+  transform: translateX(-50%); /* Center it horizontally */
 }
 
 @media only screen and (max-width: 1200px) {
@@ -108,7 +143,6 @@
 }
 
 @media only screen and (max-width: 992px) {
-
   .carousel-item1-image {
     width: 100%;
     height: 97lvh;
@@ -149,10 +183,12 @@
     font-size: 0.9rem;
   }
 
+  .carousel3-text-container {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-
   .carousel-item1-image {
     width: 100%;
     height: 97lvh;
@@ -197,7 +233,6 @@
 }
 
 @media only screen and (max-width: 576px) {
-
   .carousel-item1-image {
     width: 100%;
     height: 97lvh;
