@@ -76,15 +76,12 @@
 
 .arrow {
   position: relative;
-  display: inline-block;
   color: #d2ab67;
   padding-left: 6px;
-  padding-right: 6px;
   font-weight: 500;
 }
 
 .also {
-  /* font-weight: 600; */
   font-size: 2rem;
   position: absolute;
   bottom: 40px;
