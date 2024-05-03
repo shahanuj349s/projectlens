@@ -52,22 +52,6 @@ function Carousel() {
           </div>
           <div class="carousel-item">
             <img
-              src={Carousel_2}
-              class="d-block image carousel-item2-image"
-              alt="..."
-            />
-            <div class="carousel2-text-container">
-              <div className="carousel2-text-heading">
-                Clarity in every glance.
-              </div>
-              <p className="carousel2-text-desc pt-2">
-                Enhance everyday with lenses that reflect clarity, comfort, and
-                visual artistry.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
               src={Carousel_3}
               class="d-block image carousel-item3-image"
               alt="..."
@@ -80,14 +64,23 @@ function Carousel() {
                   ^ <span className="also">also</span>
                 </span>
                 matters.
-                {/* Dare to dream beyond what's possible. */}
               </div>
-              {/* <p className="carousel3-text-desc pt-2">
-                Lenses serve a vital role in improving visual, protecting the
-                eyes, and providing comfort. Advanced lens technology can shield
-                the eyes from harmful UV rays and blue light, preserving their
-                health.
-              </p> */}
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src={Carousel_2}
+              class="d-block image carousel-item2-image"
+              alt="..."
+            />
+            <div class="carousel2-text-container">
+              <div className="carousel2-text-heading">
+                Clarity in every glance.
+              </div>
+              <p className="carousel2-text-desc pt-2">
+                Enhance everyday with lenses that reflect clarity, comfort, and
+                visual artistry.
+              </p>
             </div>
           </div>
         </div>
