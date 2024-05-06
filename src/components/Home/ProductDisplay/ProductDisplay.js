@@ -3,13 +3,15 @@ import Product_description_1 from "../../../Assets/Product_description_1.jpeg";
 import Product_description_2 from "../../../Assets/Product_description_2.jpeg";
 import Product_description_3 from "../../../Assets/Product_description_3.jpg";
 import "./ProductDisplay.css";
+import { useNavigate } from "react-router-dom";
 
 function ProductDisplay() {
+  const navigate = useNavigate();
   return (
     <div className=" pb-5">
       <h1 className="faq-title pt-4 pb-3">Discover our products</h1>
       <div className="d-flex flex-column flex-md-row justify-content-evenly ">
-        <div class="card col-md-3">
+        <div class="card col-md-3" onClick={() => navigate("/product1")}>
           <img src={Product_description_1} class="card-img-top" alt="..." />
           <div class="card-body d-flex flex-column justify-content-between align-items-center">
             <div>
@@ -23,7 +25,7 @@ function ProductDisplay() {
             </a>
           </div>
         </div>
-        <div class="card col-md-3">
+        <div class="card col-md-3" onClick={() => navigate("/product2")}>
           <img src={Product_description_2} class="card-img-top" alt="..." />
           <div class="card-body d-flex flex-column justify-content-between align-items-center">
             <div>
@@ -37,7 +39,7 @@ function ProductDisplay() {
             </a>
           </div>
         </div>
-        <div class="card col-md-3">
+        <div class="card col-md-3" onClick={() => navigate("/product3")}>
           <img src={Product_description_3} class="card-img-top" alt="..." />
           <div class="card-body d-flex flex-column justify-content-between align-items-center">
             <div>
