@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ProductImage from "../../Assets/Product_description_1.jpeg";
 import icon from "../../Assets/Icon1.png";
 import ProuctImage_1 from "../../Assets/ProductImage_1.jpg";
 import "./Product1.css";
+import { useLocation } from "react-router-dom";
 
 function Product1() {
   const blocks = [
@@ -35,6 +36,11 @@ function Product1() {
 
   const topBlocks = blocks.slice(0, 3);
   const bottomBlocks = blocks.slice(3);
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <div>

@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 function ProductDisplay() {
   const navigate = useNavigate();
+
   return (
     <div className=" pb-5">
       <h1 className="faq-title pt-4 pb-3">Discover our products</h1>
