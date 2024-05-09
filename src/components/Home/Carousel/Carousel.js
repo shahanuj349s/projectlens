@@ -44,7 +44,7 @@ function Carousel() {
             <div class="carousel1-text-container">
               <div className="carousel1-text-heading">Frame your world</div>
               {" "}
-              <div className="carousel1-text-heading">with clarity</div>
+              <div className="carousel1-text-heading">with clarity.</div>
               <p className="carousel1-text-desc pt-2">
                 Experience incomparable comfort and crystal-clear vision - as
                 every look deserves brilliance.
