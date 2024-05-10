@@ -85,17 +85,17 @@ function Navbar1() {
                   className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}
                 >
                   <li>
-                    <a class="dropdown-item" href="/product1">
+                    <a class="dropdown-item" href="/openvista">
                       OpenVista
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="/product2">
+                    <a class="dropdown-item" href="/BLU-Armour">
                       BLU-Armour
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="/product3">
+                    <a class="dropdown-item" href="/tailorcraft">
                       TailorCraft
                     </a>
                   </li>

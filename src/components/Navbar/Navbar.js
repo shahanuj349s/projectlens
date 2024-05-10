@@ -103,17 +103,17 @@ function Navbar() {
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>
-                  <a className="dropdown-item" href="/product1">
+                  <a className="dropdown-item" href="/openvista">
                     OpenVista
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/product2">
+                  <a className="dropdown-item" href="/BLU-Armour">
                     BLU-Armour
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/product3">
+                  <a className="dropdown-item" href="/tailorcraft">
                     TailorCraft
                   </a>
                 </li>

@@ -12,7 +12,7 @@ function ProductDisplay() {
     <div className=" pb-5">
       <h1 className="faq-title pt-4 pb-3">Discover our products</h1>
       <div className="d-flex flex-column flex-md-row justify-content-evenly ">
-        <div class="card col-md-3" onClick={() => navigate("/product1")}>
+        <div class="card col-md-3" onClick={() => navigate("/openvista")}>
           <img src={Product_description_1} class="card-img-top" alt="..." />
           <div class="card-body d-flex flex-column justify-content-between align-items-center">
             <div>
@@ -21,12 +21,12 @@ function ProductDisplay() {
                 For easy cleaning, transparency and durability.
               </p>
             </div>
-            <a href="/product1" class="btn btnStyle mt-2">
+            <a href="/openvista" class="btn btnStyle mt-2">
               Discover
             </a>
           </div>
         </div>
-        <div class="card col-md-3" onClick={() => navigate("/product2")}>
+        <div class="card col-md-3" onClick={() => navigate("/BLU-Armour")}>
           <img src={Product_description_2} class="card-img-top" alt="..." />
           <div class="card-body d-flex flex-column justify-content-between align-items-center">
             <div>
@@ -35,12 +35,12 @@ function ProductDisplay() {
                 Selective filtering to reduce digital eye strain.
               </p>
             </div>
-            <a href="/product2" class="btn btnStyle mt-2">
+            <a href="/BLU-Armour" class="btn btnStyle mt-2">
               Discover
             </a>
           </div>
         </div>
-        <div class="card col-md-3" onClick={() => navigate("/product3")}>
+        <div class="card col-md-3" onClick={() => navigate("/tailorcraft")}>
           <img src={Product_description_3} class="card-img-top" alt="..." />
           <div class="card-body d-flex flex-column justify-content-between align-items-center">
             <div>
@@ -49,7 +49,7 @@ function ProductDisplay() {
                 For seamless transition from close proximity to a distance.
               </p>
             </div>
-            <a href="/product3" class="btn btnStyle mt-2">
+            <a href="/tailorcraft" class="btn btnStyle mt-2">
               Discover
             </a>
           </div>

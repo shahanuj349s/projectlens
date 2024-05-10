@@ -20,9 +20,9 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about-us" element={<Aboutus />}></Route>
-          <Route path="/product1" element={<Product1 />}></Route>
-          <Route path="/product2" element={<Product2 />}></Route>
-          <Route path="/product3" element={<Product3 />}></Route>
+          <Route path="/openvista" element={<Product1 />}></Route>
+          <Route path="/BLU-Armour" element={<Product2 />}></Route>
+          <Route path="/tailorcraft" element={<Product3 />}></Route>
           <Route path="/contact-us" element={<ContactUs />}></Route>
         </Routes>
       </BrowserRouter>

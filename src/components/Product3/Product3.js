@@ -50,7 +50,7 @@ function Product3() {
           <h3>TailorCraft</h3>
           <hr />
           <p className="product3-image-subtext">
-            Seamlessly Adapt to Every Distance and angle.
+            Seamlessly adapt to every distance and angle.
           </p>
         </div>
       </div>
