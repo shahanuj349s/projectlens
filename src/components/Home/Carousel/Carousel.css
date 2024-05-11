@@ -317,7 +317,7 @@
 @media only screen and (max-width: 576px) {
   .carousel-item1-image {
     width: 100%;
-    height: 94lvh;
+    height: 90lvh;
     object-fit: cover;
     object-position: 40% center;
   }
@@ -338,7 +338,7 @@
 
   .carousel-item2-image {
     width: 100%;
-    height: 94lvh;
+    height: 90lvh;
     object-fit: cover;
     object-position: 58% center;
   }
@@ -359,7 +359,7 @@
 
   .carousel-item3-image {
     width: 100%;
-    height: 94lvh;
+    height: 90lvh;
     object-fit: cover;
     object-position: 30% center;
   }
