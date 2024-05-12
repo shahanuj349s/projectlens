@@ -32,7 +32,7 @@ function Contact() {
               <div className="conIcons1 ">
                 <p className="d-flex align-items-center">
                   <FaPhoneAlt />
-                  <div className="conAdd1 mx-2"> +1 202-xxx-2132</div>
+                  <div className="conAdd1 mx-2"> +91 8849918448</div>
                 </p>
                 <p className="d-flex align-items-center">
                   <FaEnvelope />
@@ -45,7 +45,7 @@ function Contact() {
                 </p>
                 <p className="d-flex align-items-center">
                   <FaLocationDot />
-                  <div className="conAdd1 mx-2">New Hampshire, Lake Maude</div>
+                  <div className="conAdd1 mx-2">Ahmedabad , India</div>
                 </p>
               </div>
               <div className="socialIcons py-3 ">

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import ProductImage from "../../Assets/Product_description_3.jpg";
 import icon from "../../Assets/Icon1.png";
-import ProuctImage_3 from "../../Assets/ProductImage_3.jpeg";
+import ProuctImage_3 from "../../Assets/ProductImage_3.jpg";
 import "./Product3.css";
 import { useLocation } from "react-router-dom";
 
