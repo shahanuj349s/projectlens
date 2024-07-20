@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import logo from "../../Assets/Logo2.png";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -13,15 +14,15 @@ function Footer() {
           </div>
           <div class="sb__footer-links-div">
             <h4 className="footer-head">Social Media</h4>
-            <a href="/info_6">
+            <Link to="/info_6">
               <p>Instagram</p>
-            </a>
+            </Link>
           </div>
           <div class="sb__footer-links-div">
             <h4 className="footer-head">Have a Question</h4>
-            <a href="/contact-us">
+            <Link to="/contact-us">
               <p>Contact Us</p>
-            </a>
+            </Link>
           </div>
         </div>
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Contact.css";
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa6";
@@ -19,6 +19,9 @@ function Contact() {
   const handleChange = (event) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <div className="conForm-Main container-fluid">

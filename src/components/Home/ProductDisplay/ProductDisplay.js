@@ -3,7 +3,7 @@ import Product_description_1 from "../../../Assets/Product_description_1.jpeg";
 import Product_description_2 from "../../../Assets/Product_description_2.jpeg";
 import Product_description_3 from "../../../Assets/Product_description_3.jpg";
 import "./ProductDisplay.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function ProductDisplay() {
   const navigate = useNavigate();
@@ -21,9 +21,9 @@ function ProductDisplay() {
                 For easy cleaning, transparency and durability.
               </p>
             </div>
-            <a href="/openvista" class="btn btnStyle mt-2">
+            <Link to="/openvista" class="btn btnStyle mt-2">
               Discover
-            </a>
+            </Link>
           </div>
         </div>
         <div class="card col-md-3" onClick={() => navigate("/BLU-Armour")}>
@@ -35,9 +35,9 @@ function ProductDisplay() {
                 Selective filtering to reduce digital eye strain.
               </p>
             </div>
-            <a href="/BLU-Armour" class="btn btnStyle mt-2">
+            <Link to="/BLU-Armour" class="btn btnStyle mt-2">
               Discover
-            </a>
+            </Link>
           </div>
         </div>
         <div class="card col-md-3" onClick={() => navigate("/tailorcraft")}>
@@ -49,9 +49,9 @@ function ProductDisplay() {
                 For seamless transition from close proximity to a distance.
               </p>
             </div>
-            <a href="/tailorcraft" class="btn btnStyle mt-2">
+            <Link to="/tailorcraft" class="btn btnStyle mt-2">
               Discover
-            </a>
+            </Link>
           </div>
         </div>
       </div>

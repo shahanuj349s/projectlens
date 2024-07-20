@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar1.css";
 import logo from "../../Assets/Logo2.png";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Navbar1() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -32,10 +32,10 @@ function Navbar1() {
         role="navigation"
       >
         <div className="container-fluid px-4 px-md-5">
-          <a className="d-flex navbar-brand" href="/">
+          <Link className="d-flex navbar-brand" to="/">
             {/* <h1>LOGO</h1> */}
             <img src={logo} className="img-logo" />
-          </a>
+          </Link>
 
           <button
             type="button"
@@ -57,57 +57,57 @@ function Navbar1() {
           >
             <ul className="d-lg-flex navbar-nav align-items-center mb-2 mb-lg-0 navbar-container">
               <li className="nav-item py-2 px-lg-2">
-                <a
+                <Link
                   className="nav-link px-1 p-0 d-flex align-items-center"
-                  href="/about-us"
+                  to="/about-us"
                 >
                   <span className="landing-navbar">About Us</span>
-                </a>
+                </Link>
               </li>
               <li
                 class="nav-item dropdown"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               >
-                <a
+                <Link
                   class="nav-link dropdown-toggle text-white d-flex align-items-center px-1"
-                  href="#"
+                  to="#"
                   id="navbarDropdownMenuLink"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   <span className="landing-navbar">Our Products</span>
-                </a>
+                </Link>
                 <ul
                   class="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                   className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}
                 >
                   <li>
-                    <a class="dropdown-item" href="/openvista">
+                    <Link class="dropdown-item" to="/openvista">
                       OpenVista
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="/BLU-Armour">
+                    <Link class="dropdown-item" to="/BLU-Armour">
                       BLU-Armour
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="/tailorcraft">
+                    <Link class="dropdown-item" to="/tailorcraft">
                       TailorCraft
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
               <li className="nav-item py-2 px-lg-2">
-                <a
+                <Link
                   className="nav-link px-1 p-0 d-flex align-items-center"
-                  href="/contact-us"
+                  to="/contact-us"
                 >
                   <span className="landing-navbar">Contact Us</span>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

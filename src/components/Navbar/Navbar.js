@@ -51,9 +51,9 @@ function Navbar() {
       role="navigation"
     >
       <div className="container-fluid px-4 px-md-5 navbar navbarmain">
-        <a className="d-flex navbar-brand" href="/">
+        <Link className="d-flex navbar-brand" to="/">
           <img src={logo} className="img-logo" alt="Logo" />
-        </a>
+        </Link>
 
         <button
           type="button"
@@ -76,12 +76,12 @@ function Navbar() {
         >
           <ul className="d-lg-flex navbar-nav align-items-center mb-2 mb-lg-0 navbar-container">
             <li className="nav-item py-2 px-lg-2">
-              <a
+              <Link
                 className="nav-link px-1 p-0 d-flex align-items-center"
-                href="/about-us"
+                to="/about-us"
               >
                 <span className="landing-navbar">About Us</span>
-              </a>
+              </Link>
             </li>
             <li
               className="nav-item dropdown"
@@ -90,7 +90,7 @@ function Navbar() {
             >
               <a
                 className="nav-link dropdown-toggle text-white d-flex align-items-center px-1"
-                href="#"
+                to="#"
                 id="navbarDropdownMenuLink"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -103,29 +103,30 @@ function Navbar() {
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>
-                  <a className="dropdown-item" href="/openvista">
+                  <Link className="dropdown-item" to="/openvista">
                     OpenVista
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/BLU-Armour">
+                  <Link className="dropdown-item" to="/BLU-Armour">
                     BLU-Armour
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/tailorcraft">
+                  <Link className="dropdown-item" to="/tailorcraft">
                     TailorCraft
-                  </a>
+                  </Link>
                 </li>
               </ul>
+              
             </li>
             <li className="nav-item py-2 px-lg-2">
-              <a
+              <Link
                 className="nav-link px-1 p-0 d-flex align-items-center"
-                href="/contact-us"
+                to="/contact-us"
               >
                 <span className="landing-navbar">Contact Us</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

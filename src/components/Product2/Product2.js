@@ -38,7 +38,7 @@ function Product2() {
   const bottomBlocks = blocks.slice(3);
   const { pathname } = useLocation();
 
-  useEffect(() => {
+  useEffect  (() => {
     window.scrollTo(0, 0);
   }, [pathname]);
   return (
@@ -93,7 +93,7 @@ function Product2() {
             and lively.
           </div>
           <div class="d-flex col-md-6">
-            <img src={ProuctImage_2} class="product2-image" alt="..." />
+              <img src={ProuctImage_2} class="product2-image" alt="..." />
           </div>
         </div>
         {/* </div> */}

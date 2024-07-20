@@ -42,8 +42,7 @@ function Carousel() {
               alt="..."
             />
             <div class="carousel1-text-container">
-              <div className="carousel1-text-heading">Frame your world</div>
-              {" "}
+              <div className="carousel1-text-heading">Frame your world</div>{" "}
               <div className="carousel1-text-heading">with clarity.</div>
               <p className="carousel1-text-desc pt-2">
                 Experience incomparable comfort and crystal-clear vision - as
@@ -59,12 +58,7 @@ function Carousel() {
             />
             <div class="carousel3-text-container">
               <div className="carousel3-text-heading">
-                <span className="what">What</span>
-                <span class="styled-text">How</span> you look
-                <span class="arrow">
-                  ^ <span className="also">also</span>
-                </span>
-                matters.
+                <div>See Beyond.</div> <div>See Better.</div>
               </div>
             </div>
           </div>
