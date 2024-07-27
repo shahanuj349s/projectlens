@@ -21,90 +21,6 @@ const locations = {
       shop_number: "079-22144797",
       logo: "../../Assets/VeenaOpticalLogo.png",
     },
-    {
-      lat: 23.0225,
-      lng: 72.5714,
-      shop_name: "Veena optical Co.",
-      shop_addr: "GR 7-8 , Kothari pol , Gandhi road , Khadia",
-      shop_number: "079-22144797",
-    },
-    {
-      lat: 23.03,
-      lng: 72.58,
-      shop_name: "Crown Optical Co.",
-      shop_addr: "GR 7-8 , Kothari pol , Gandhi road , Khadia",
-      shop_number: "079-22144797",
-    },
-    {
-      lat: 23.0225,
-      lng: 72.5714,
-      shop_name: "Veena optical Co.",
-      shop_addr: "GR 7-8 , Kothari pol , Gandhi road , Khadia",
-      shop_number: "079-22144797",
-    },
-    {
-      lat: 23.03,
-      lng: 72.58,
-      shop_name: "Crown Optical Co.",
-      shop_addr: "GR 7-8 , Kothari pol , Gandhi road , Khadia",
-      shop_number: "079-22144797",
-    },
-    {
-      lat: 23.0225,
-      lng: 72.5714,
-      shop_name: "Veena optical Co.",
-      shop_addr: "GR 7-8 , Kothari pol , Gandhi road , Khadia",
-      shop_number: "079-22144797",
-    },
-    {
-      lat: 23.03,
-      lng: 72.58,
-      shop_name: "Crown Optical Co.",
-      shop_addr: "GR 7-8 , Kothari pol , Gandhi road , Khadia",
-      shop_number: "079-22144797",
-    },
-    {
-      lat: 23.0225,
-      lng: 72.5714,
-      shop_name: "Veena optical Co.",
-      shop_addr: "GR 7-8 , Kothari pol , Gandhi road , Khadia",
-      shop_number: "079-22144797",
-    },
-    {
-      lat: 23.03,
-      lng: 72.58,
-      shop_name: "Crown Optical Co.",
-      shop_addr: "GR 7-8 , Kothari pol , Gandhi road , Khadia",
-      shop_number: "079-22144797",
-    },
-    {
-      lat: 23.0225,
-      lng: 72.5714,
-      shop_name: "Veena optical Co.",
-      shop_addr: "GR 7-8 , Kothari pol , Gandhi road , Khadia",
-      shop_number: "079-22144797",
-    },
-    {
-      lat: 23.03,
-      lng: 72.58,
-      shop_name: "Crown Optical Co.",
-      shop_addr: "GR 7-8 , Kothari pol , Gandhi road , Khadia",
-      shop_number: "079-22144797",
-    },
-    {
-      lat: 23.0225,
-      lng: 72.5714,
-      shop_name: "Veena optical Co.",
-      shop_addr: "GR 7-8 , Kothari pol , Gandhi road , Khadia",
-      shop_number: "079-22144797",
-    },
-    {
-      lat: 23.03,
-      lng: 72.58,
-      shop_name: "Crown Optical Co.",
-      shop_addr: "GR 7-8 , Kothari pol , Gandhi road , Khadia",
-      shop_number: "079-22144797",
-    },
     // Add more locations for Ahmedabad
   ],
   Gandhinagar: [
@@ -166,7 +82,12 @@ function SearchLocation() {
                     <div className="card-div">
                       <p className="card-text">{shop.shop_number}</p>
 
-                      <Link to={"https://www.google.com/maps"} target="_blank">
+                      <Link
+                        to={
+                          "https://www.google.com/maps/search/?api=1&query=R+Kumar+Opticians-+Optical+Store+in+Satellite"
+                        }
+                        target="_blank"
+                      >
                         Get directions
                       </Link>
                     </div>
