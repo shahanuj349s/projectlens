@@ -118,7 +118,14 @@ function Navbar() {
                   </Link>
                 </li>
               </ul>
-              
+            </li>
+            <li className="nav-item py-2 px-lg-2">
+              <Link
+                className="nav-link px-1 p-0 d-flex align-items-center"
+                to="/contact-us"
+              >
+                <span className="landing-navbar">Store Locator</span>
+              </Link>
             </li>
             <li className="nav-item py-2 px-lg-2">
               <Link

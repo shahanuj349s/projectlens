@@ -12,7 +12,8 @@ import Product1 from "./pages/Product1";
 import Product2 from "./pages/Product2";
 import Product3 from "./pages/Product3";
 import ContactUs from "./pages/ContactUs";
-import Maps from "./components/Maps/Maps";
+import Maps from "./pages/Maps";
+import SearchLocation from "./components/Maps/SearchLocation";
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
           <Route path="/tailorcraft" element={<Product3 />}></Route>
           <Route path="/contact-us" element={<ContactUs />}></Route>
           <Route path="/map" element={<Maps />}></Route>
+          <Route path="/search" element={<SearchLocation />}></Route>
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
