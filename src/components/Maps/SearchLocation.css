@@ -9,7 +9,8 @@
 .card {
   height: 100%;
   display: flex;
-  align-items: center;
+  border: 1px solid #0d3b66;
+  /* text-align: left; */
 }
 
 .card-body {
@@ -24,6 +25,19 @@
 
 .card-container {
   text-align: left;
+}
+
+.card-title {
+  color: #0d3b66;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #414141;
+}
+
+.card-numb{
+  font-size: 13px;
 }
 
 .card-div {
