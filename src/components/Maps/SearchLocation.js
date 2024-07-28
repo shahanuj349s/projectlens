@@ -68,8 +68,8 @@ const locations = {
 function SearchLocation() {
   const [selectedLocation, setSelectedLocation] = useState("Ahmedabad");
 
-  const handleChange = (event) => {
-    setSelectedLocation(event.target.value);
+  const handleLocationChange = (location) => {
+    setSelectedLocation(location);
   };
 
   useEffect(() => {
@@ -79,15 +79,34 @@ function SearchLocation() {
   return (
     <div className="container main-container">
       <h1>Our Optical Partner</h1>
-      <div className="select-container">
-        <select
-          className="form-select"
-          onChange={handleChange}
-          value={selectedLocation}
+      <div className="dropdown">
+        <button
+          className="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
         >
-          <option value="Ahmedabad">Ahmedabad</option>
-          <option value="Gandhinagar">Gandhinagar</option>
-        </select>
+          {selectedLocation}
+        </button>
+        <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li>
+            <button
+              className="dropdown-item"
+              onClick={() => handleLocationChange("Ahmedabad")}
+            >
+              Ahmedabad
+            </button>
+          </li>
+          <li>
+            <button
+              className="dropdown-item"
+              onClick={() => handleLocationChange("Gandhinagar")}
+            >
+              Gandhinagar
+            </button>
+          </li>
+        </ul>
       </div>
 
       <div className="row mb-4">
