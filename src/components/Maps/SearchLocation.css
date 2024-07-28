@@ -23,24 +23,26 @@
   width: 50px;
 }
 
-.card-container {
+.search-card-container {
   text-align: left;
 }
 
-.card-title {
+.search-card-title {
   color: #0d3b66;
+  font-weight: 600;
 }
 
-.card-text {
+.search-card-text {
   font-size: 14px;
   color: #414141;
 }
 
-.card-numb{
+.search-card-numb{
   font-size: 13px;
+  font-weight: bold;
 }
 
-.card-div {
+.search-card-div {
   display: flex;
   justify-content: space-between;
 }
