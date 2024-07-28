@@ -86,7 +86,7 @@ function SearchLocation() {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container main-container">
       <h1>Our Optical Partner</h1>
       <div className="select-container">
         <select
@@ -105,8 +105,8 @@ function SearchLocation() {
           .sort((a, b) => a.shop_name.localeCompare(b.shop_name))
           .map((shop, index) => (
             <div key={index} className="col-12 col-md-6 col-lg-4 gap-3">
-              <div className="card w-100">
-                <div className="card-body">
+              <div className="card search-card w-100">
+                <div className="card-body search-card-body">
                   <div>
                     <img src={logo} alt="logo" />
                   </div>

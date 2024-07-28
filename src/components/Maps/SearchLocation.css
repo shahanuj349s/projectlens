@@ -1,4 +1,4 @@
-.container {
+.main-container {
   margin-top: 20px;
 }
 
@@ -6,19 +6,19 @@
   margin-bottom: 20px;
 }
 
-.card {
+.search-card {
   height: 100%;
   display: flex;
   border: 1px solid #0d3b66;
   /* text-align: left; */
 }
 
-.card-body {
+.search-card-body {
   display: flex;
   align-items: center;
 }
 
-.card-body img {
+.search-card-body img {
   margin-right: 15px;
   width: 50px;
 }
