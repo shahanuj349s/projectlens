@@ -1,5 +1,6 @@
 .main-container {
   margin-top: 20px;
+  padding: 0px 30px;
 }
 
 .select-container {
@@ -18,8 +19,8 @@
   align-items: center;
 }
 
-.search-card-body img {
-  margin-right: 15px;
+.search-card-body-img {
+  padding-right: 10px;
   width: 50px;
 }
 
@@ -37,7 +38,7 @@
   color: #414141;
 }
 
-.search-card-numb{
+.search-card-numb {
   font-size: 13px;
   font-weight: bold;
 }
@@ -45,4 +46,11 @@
 .search-card-div {
   display: flex;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 992px) {
+  .search-dropdown-menu{
+    border: 1px solid #212529 !important;
+    max-height: 82px !important;
+  }
 }

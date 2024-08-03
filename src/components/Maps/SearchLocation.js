@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { IoIosCall } from "react-icons/io";
 import { MdLocationOn } from "react-icons/md";
 
+
 const locations = {
   Ahmedabad: [
     {
@@ -41,7 +42,6 @@ const locations = {
       shop_number: "079-26401755",
       link: "R+Kumar+Opticians-+Optical+Store+in+CG+Road",
     },
-    
     // Add more locations for Ahmedabad
   ],
   Gandhinagar: [
@@ -65,31 +65,38 @@ const locations = {
   ],
 };
 
+
 function SearchLocation() {
   const [selectedLocation, setSelectedLocation] = useState("Ahmedabad");
+
 
   const handleLocationChange = (location) => {
     setSelectedLocation(location);
   };
 
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+
   return (
-    <div className="container main-container">
+    <div className="main-container">
       <h1>Our Optical Partner</h1>
-      <div className="dropdown">
+      <div className="dropdown mb-4 w-100">
         <button
-          className="btn btn-secondary dropdown-toggle"
+          className="btn btn-secondary dropdown-toggle w-100 text d-flex align-items-center justify-content-between"
           type="button"
           id="dropdownMenuButton"
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          {selectedLocation}
+          <div>{selectedLocation}</div>
         </button>
-        <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <ul
+          className="dropdown-menu search-dropdown-menu w-100"
+          aria-labelledby="dropdownMenuButton"
+        >
           <li>
             <button
               className="dropdown-item"
@@ -109,25 +116,33 @@ function SearchLocation() {
         </ul>
       </div>
 
-      <div className="row mb-4">
+
+      <div className="row">
         {locations[selectedLocation]
           .slice() // Create a copy of the array to avoid mutating the original
           .sort((a, b) => a.shop_name.localeCompare(b.shop_name))
           .map((shop, index) => (
-            <div key={index} className="col-12 col-md-6 col-lg-4 gap-3">
-              <div className="card search-card w-100">
+            <div key={index} className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div className="card search-card mx-2">
                 <div className="card-body search-card-body">
-                  <div>
-                    <img src={logo} alt="logo" />
+                  <div className="search-card-body-img col-3">
+                    <img src={logo} alt="logo" className="img-fluid" />
                   </div>
-                  <div className="card-container search-card-container w-100">
-                    <h5 className="card-title search-card-title">{shop.shop_name}</h5>
-                    <p className="card-text search-card-text">{shop.shop_addr}</p>
+                  <div className="col-9 search-card-container">
+                    <h5 className="card-title search-card-title">
+                      {shop.shop_name}
+                    </h5>
+                    <p className="card-text search-card-text">
+                      {shop.shop_addr}
+                    </p>
                     <div className="search-card-div">
                       <div className="d-flex align-items-center gap-1">
                         <IoIosCall />
-                        <div className="search-card-numb">{shop.shop_number}</div>
+                        <div className="search-card-numb">
+                          {shop.shop_number}
+                        </div>
                       </div>
+
 
                       <div className="d-flex align-items-center gap-1">
                         <MdLocationOn />
@@ -150,4 +165,8 @@ function SearchLocation() {
   );
 }
 
+
 export default SearchLocation;
+
+
+
