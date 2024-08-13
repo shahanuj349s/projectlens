@@ -56,6 +56,14 @@ function Navbar1() {
             id="navbarRightAlignExample"
           >
             <ul className="d-lg-flex navbar-nav align-items-center mb-2 mb-lg-0 navbar-container">
+            <li className="nav-item py-2 px-lg-2">
+                <Link
+                  className="nav-link px-1 p-0 d-flex align-items-center"
+                  to="/"
+                >
+                  <span className="landing-navbar">Home</span>
+                </Link>
+              </li>
               <li className="nav-item py-2 px-lg-2">
                 <Link
                   className="nav-link px-1 p-0 d-flex align-items-center"
